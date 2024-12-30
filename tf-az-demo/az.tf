@@ -15,4 +15,10 @@ resource "azurerm_virtual_network" "lms" {
   }
 }
 
-
+# Web Subnet
+resource "azurerm_subnet" "lms-web-sn" {
+  name                 = "lms-web-subnet"
+  resource_group_name  = azurerm_resource_group.lms-2433.name
+  virtual_network_name = azurerm_virtual_network.lms.name
+  address_prefixes     = ["10.0.0.0/24"]
+}
