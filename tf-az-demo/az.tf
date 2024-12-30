@@ -38,3 +38,15 @@ resource "azurerm_subnet" "lms-db-sn" {
   virtual_network_name = azurerm_virtual_network.lms.name
   address_prefixes     = ["10.0.2.0/24"]
 }
+
+# Public IP
+resource "azurerm_public_ip" "lms-pip" {
+  name                = "lms-web-pip"
+  resource_group_name = azurerm_resource_group.lms-2433.name
+  location            = azurerm_resource_group.lms-2433.location
+  allocation_method   = "Static"
+
+  tags = {
+    environment = "lms-web-pip"
+  }
+}
