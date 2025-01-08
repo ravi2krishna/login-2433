@@ -1,0 +1,24 @@
+# - Comment, this line will be ignored by kubernetes
+
+# we can use key value 
+key: value
+name: ravi
+city: hyderabad
+country: india
+
+# A dictionary is a data structure that holds a collection of data 
+# as a set of key-value pairs. 
+
+trainer:
+  name: ravi
+  course: devops
+  city: hyderabad
+  country: india
+
+# List - Multiple items
+
+trainers:
+- name: Ravi
+  city: hyd
+- name: krishna
+  city: hyd
