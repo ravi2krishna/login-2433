@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: php-apache
 spec:
-  replicas: 1
   selector:
     matchLabels:
       run: php-apache
@@ -30,7 +29,6 @@ metadata:
   labels:
     run: php-apache
 spec:
-  type: ClusterIP
   ports:
   - port: 80
   selector:
