@@ -17,7 +17,7 @@ sudo rm -rf /var/www/html
 sleep 5
 
 echo "Clone Login App"
-sudo git clone https://https://github.com/chittibabu9595/login-2433.git /var/www/html
+sudo git clone https://github.com/chittibabu9595/login-2433.git /var/www/html
 sleep 5
 
 echo "Browse Login App with Server Public IP"
